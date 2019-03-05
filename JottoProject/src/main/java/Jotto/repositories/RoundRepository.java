@@ -12,6 +12,6 @@ public interface RoundRepository extends CrudRepository<Round, Integer> {
     @Query(value = "select * from round a where a.game_id = :game_id and a.round_number= (select MAX(a.round_number) from round a where a.game_id = :game_id) ", nativeQuery = true)
     Round getMostRecentRound(@Param("game_id") Integer gameID);
 
-    @Query(value = "select * from round a where a.game_id = :game_id", nativeQuery = true)
+    @Query(value = "select * from round a where a.game_id = :game_id ORDER BY round_id ASC", nativeQuery = true)
     List<Round> getMatchDetails(@Param("game_id") Integer gameID);
 }

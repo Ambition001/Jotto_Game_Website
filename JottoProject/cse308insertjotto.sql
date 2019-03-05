@@ -24,40 +24,40 @@ VALUES('0', 'newUser2', 'newPass2');
 /*--------------------------------GAMES-----------------------*/
 /*GAME 1*/
 INSERT INTO game
-VALUES('0', 'user1', 'WIN', 'abort', 'plead', curDate());
+VALUES('0', 'user1', 'WIN',  'plead', 'abort', curDate());
 /*GAME 2*/
 INSERT INTO game
-VALUES('0', 'user1', DEFAULT, 'adieu', 'pride', DEFAULT);
+VALUES('0', 'user1', DEFAULT, 'pride', 'adieu', curDate());
 /*GAME 3*/
 INSERT INTO game
-VALUES('0', 'user2', DEFAULT, 'hoped', 'rapid', DEFAULT);
+VALUES('0', 'user2', DEFAULT, 'rapid', 'hoped', curDate());
 /*GAME 4*/
 INSERT INTO game
-VALUES('0', 'user3', 'LOSE', 'horse', 'quiet', DEFAULT);
+VALUES('0', 'user3', 'LOSE',  'quiet', 'horse', curDate());
 /*GAME 5*/
 INSERT INTO game
-VALUES('0', 'user3', DEFAULT, 'lemon', 'acids', DEFAULT);
+VALUES('0', 'user3', DEFAULT, 'acids', 'lemon',  curDate());
 /*GAME 6*/
 INSERT INTO game
-VALUES('0', 'user4', 'WIN', 'words', 'human', DEFAULT);
+VALUES('0', 'user4', 'WIN',   'human', 'words', curDate());
 /*GAME 7*/
 INSERT INTO game
-VALUES('0', 'user4', 'WIN', 'music', 'front', DEFAULT);
+VALUES('0', 'user4', 'WIN',   'front', 'music', curDate());
 /*GAME 8*/
 INSERT INTO game
-VALUES('0', 'user4', DEFAULT, 'backs', 'piano', DEFAULT);
+VALUES('0', 'user4', DEFAULT,   'piano', 'backs', curDate());
 /*GAME 9*/
 INSERT INTO game
-VALUES('0', 'user5', 'WIN', 'crazy', 'tiles', DEFAULT);
+VALUES('0', 'user5', 'WIN',   'tiles', 'crazy', curDate());
 /*GAME 10*/
 INSERT INTO game
-VALUES('0', 'user5', 'LOSE', 'lance', 'baked', DEFAULT);
+VALUES('0', 'user5', 'LOSE',   'baked', 'lance', curDate());
 /*GAME 11*/
 INSERT INTO game
-VALUES('0', 'user5', DEFAULT, 'spear', 'smile', DEFAULT);
+VALUES('0', 'user5', DEFAULT,   'smile',  'spear',curDate());
 /*GAME 12*/
 INSERT INTO game
-VALUES('0', 'newUser2', DEFAULT, 'laser', 'drank', DEFAULT);
+VALUES('0', 'newUser2', DEFAULT,  'drank',  'laser', curDate());
 
 /* -----------------------------------ROUNDS------------------------------------*/
 
@@ -65,46 +65,46 @@ VALUES('0', 'newUser2', DEFAULT, 'laser', 'drank', DEFAULT);
 VALUES('0', '1', 'WIN', 'abort', 'plead', curDate()); GAME 1
 */
 INSERT INTO round
-VALUES ('0', '1' , '1', 'adore', 'price');
+VALUES ('0', '2',  'adore', 'price');
 
 INSERT INTO round
-VALUES ('0', '1' , '2', 'abore', 'plate');
+VALUES ('0', '2',  'abore', 'plate');
 
 INSERT INTO round
-VALUES ('0', '1' , '3', 'abort', 'plane');
+VALUES ('0', '2' , 'abort', 'plane');
 
 /*INSERT INTO game
 VALUES('0', '1', DEFAULT, 'adieu', 'pride', DEFAULT); GAME 2
 */
 
 INSERT INTO round
-VALUES ('0', '2' , '1', 'rakes', 'cakes');
+VALUES ('0', '12' , 'rakes', 'cakes');
 
 /*INSERT INTO game
 VALUES('0', '2', DEFAULT, 'hoped', 'rapid', DEFAULT); GAME 3
 */
 
 INSERT INTO round
-VALUES ('0', '3' , '1', 'abort', 'plate');
+VALUES ('0', '22' , 'abort', 'plate');
 
 INSERT INTO round
-VALUES ('0', '3' , '2', 'happy', 'poppy');
+VALUES ('0', '22' ,'happy', 'poppy');
 
 /*INSERT INTO game
 VALUES('0', '3', 'LOSE', 'horse', 'quiet', DEFAULT); GAME 4
 */
 
 INSERT INTO round
-VALUES ('0', '4' , '1', 'human', 'lakes');
+VALUES ('0', '32' , 'human', 'lakes');
 
 INSERT INTO round
-VALUES ('0', '4' , '2', 'haunt', 'quick');
+VALUES ('0', '32' ,'haunt', 'quick');
 
 INSERT INTO round
-VALUES ('0', '4' , '3', 'store', 'quest');
+VALUES ('0', '32' , 'store', 'quest');
 
 INSERT INTO round
-VALUES ('0', '4' , '4', 'shore', 'quiet');
+VALUES ('0', '32', 'shore', 'quiet');
 
 /*
 INSERT INTO game
@@ -112,93 +112,93 @@ VALUES('0', '3', DEFAULT, 'lemon', 'acids', DEFAULT); GAME 5
 */
 
 INSERT INTO round
-VALUES ('0', '5' , '1', 'pipes', 'lakes');
+VALUES ('0', '42' , 'pipes', 'lakes');
 
 /*INSERT INTO game
 VALUES('0', '4', 'WIN', 'words', 'human', DEFAULT); GAME 6
 */
 
 INSERT INTO round
-VALUES ('0', '6' , '1', 'wives', 'hares');
+VALUES ('0', '52', 'wives', 'hares');
 
 INSERT INTO round
-VALUES ('0', '6' , '2', 'words', 'shape');
+VALUES ('0', '52' , 'words', 'shape');
 
 /*INSERT INTO game
 VALUES('0', '4', 'WIN', 'music', 'front', DEFAULT); GAME 7
 */
 
 INSERT INTO round
-VALUES ('0', '7' , '1', 'lisps', 'shape');
+VALUES ('0', '62' , 'lisps', 'shape');
 
 INSERT INTO round
-VALUES ('0', '7' , '2', 'ships', 'drift');
+VALUES ('0', '62' , 'ships', 'drift');
 
 INSERT INTO round
-VALUES ('0', '7' , '3', 'mains', 'delta');
+VALUES ('0', '62' , 'mains', 'delta');
 
 INSERT INTO round
-VALUES ('0', '7' , '4', 'manic', 'freed');
+VALUES ('0', '62' , 'manic', 'freed');
 
 INSERT INTO round
-VALUES ('0', '7' , '5', 'musky', 'freak');
+VALUES ('0', '62' , 'musky', 'freak');
 
 INSERT INTO round
-VALUES ('0', '7' , '6', 'music', 'froze');
+VALUES ('0', '62' , 'music', 'froze');
 
 /*INSERT INTO game
 VALUES('0', '4', DEFAULT, 'backs', 'piano', DEFAULT); GAME 8
 */
 INSERT INTO round
-VALUES ('0', '8' , '1', 'brats', 'loved');
+VALUES ('0', '72' , 'brats', 'loved');
 
 INSERT INTO round
-VALUES ('0', '8' , '2', 'bears', 'ready');
+VALUES ('0', '72' , 'bears', 'ready');
 
 INSERT INTO round
-VALUES ('0', '8' , '3', 'beaks', 'prize');
+VALUES ('0', '72' , 'beaks', 'prize');
 /*
 INSERT INTO game
 VALUES('0', '5', 'WIN', 'crazy', 'tiles', DEFAULT); GAME 9
 */
 INSERT INTO round
-VALUES ('0', '9' , '1', 'crazy', 'masks');
+VALUES ('0', '82', 'crazy', 'masks');
 /*
 INSERT INTO game
 VALUES('0', '5', 'LOSE', 'lance', 'baked', DEFAULT); GAME 10
 */
 
 INSERT INTO round
-VALUES ('0', '10' , '1', 'break', 'lived');
+VALUES ('0', '92' , 'break', 'lived');
 
 INSERT INTO round
-VALUES ('0', '10' , '2', 'leaps','bread');
+VALUES ('0', '92' , 'leaps','bread');
 
 INSERT INTO round
-VALUES ('0', '10' , '3', 'beaks', 'bleed');
+VALUES ('0', '92' , 'beaks', 'bleed');
 
 INSERT INTO round
-VALUES ('0', '10' , '4', 'dance', 'baked');
+VALUES ('0', '92' , 'dance', 'baked');
 
 /*
 INSERT INTO game
 VALUES('0', '5', 'DEFAULT', 'spear', 'smile', DEFAULT); GAME 11
 */
 INSERT INTO round
-VALUES ('0', '11' , '1', 'mails', 'pesto');
+VALUES ('0', '102',  'mails', 'pesto');
 INSERT INTO round
-VALUES ('0', '11' , '2', 'rails', 'lasso');
+VALUES ('0', '102',  'rails', 'lasso');
 
 /*INSERT INTO game
 VALUES('0', '7', 'DEFAULT', 'laser', 'drank', DEFAULT); GAME 12
 */
 
 INSERT INTO round
-VALUES ('0', '12' , '1', 'music', 'trims');
+VALUES ('0', '112', 'music', 'trims');
 INSERT INTO round
-VALUES ('0', '12' , '2', 'anvil', 'prize');
+VALUES ('0', '112', 'anvil', 'prize');
 INSERT INTO round
-VALUES ('0', '12' , '3', 'lairs', 'press');
+VALUES ('0', '112', 'lairs', 'press');
 INSERT INTO round
-VALUES ('0', '12' , '4', 'lease', 'dress');
+VALUES ('0', '112', 'lease', 'dress');
 

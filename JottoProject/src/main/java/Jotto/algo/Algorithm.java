@@ -53,11 +53,11 @@ public class Algorithm {
     // set all word to different lists
     public static void initialSet(){
         // open file, relative path
-        File f11111 = new File(".\\src\\main\\resources\\list\\11111.txt");
-        File f1112 = new File(".\\src\\main\\resources\\list\\1112.txt");
-        File f122 = new File(".\\src\\main\\resources\\list\\122.txt");
-        File f113 = new File(".\\src\\main\\resources\\list\\113.txt");
-        File f23 = new File(".\\src\\main\\resources\\list\\23.txt");
+        File f11111 = new File("src/main/resources/list/11111.txt");
+        File f1112 = new File("src/main/resources/list/1112.txt");
+        File f122 = new File("src/main/resources/list/122.txt");
+        File f113 = new File("src/main/resources/list/113.txt");
+        File f23 = new File("src/main/resources/list/23.txt");
 
         // read each file, split to words and insert to list
         try {

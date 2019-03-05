@@ -106,6 +106,7 @@ function validate_login_form(form, data) {
 
 // REGISTRATION FORM: Validation function
 function validate_registration_form(form, data) {
+  var validality;
   if (data.user_username == "") {
     // if username variable is empty
     addFormError(form["user_username"], 'The username is invalid');

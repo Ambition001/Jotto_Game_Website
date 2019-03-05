@@ -42,15 +42,9 @@ public class ajaxGameController {
             if (cpuGuess!= null)
                 numCheck = Algorithm.checkNum(Algorithm.given.toLowerCase(), cpuGuess.toLowerCase());
             int roundNumber = Algorithm.round;
-            /*
-              Unfinished, pass gameId, roundNumber, userGuess(which is user's guess word), and cpuGuess (AI's guess word)
-              to database, and create a new round
 
-              "int status" use to control the game status, if 0, continue. if 1, user win. if 2, CPU win.
-              if user or cpu win, need to change the status of game by using game_id
-             */
             Round round = new Round();
-            round.setRound_number(roundNumber);
+            // round.setRound_number(roundNumber);
             round.setCpu_guess(cpuGuess);
             round.setUser_guess(userGuess);
             round.setGame_id(Integer.parseInt(game_id));

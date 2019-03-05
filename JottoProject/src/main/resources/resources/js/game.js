@@ -30,24 +30,25 @@ function validate_word_r(word){
         //request database and update table
         if(status ==1){//user win
             //show user win
-            $("#win").fadeIn(500);
-            $("#newGameBtn").fadeIn(500);
-            $("#guess_word").fadeOut(500);
-            $("#submitfield").fadeOut(500);
-            $("#enterYourGuess").fadeOut(500);
+            $("#win").fadeIn(1);
+            $("#newGameBtn").fadeIn(1);
+            $("#guess_word").fadeOut(1);
+            $("#submitfield").fadeOut(1);
+            $("#enterYourGuess").fadeOut(1);
 
         }else if(status ==2){//computer win
             //show computer win
-            $("#lose").fadeIn(500);
-            $("#newGameBtn").fadeIn(500);
-            $("#guess_word").fadeOut(500);
-            $("#submitfield").fadeOut(500);
-            $("#enterYourGuess").fadeOut(500);
+            $("#lose").fadeIn(1);
+            $("#newGameBtn").fadeIn(1);
+            $("#guess_word").fadeOut(1);
+            $("#submitfield").fadeOut(1);
+            $("#enterYourGuess").fadeOut(1);
         }
         var alpaHelper = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
         var secret_word = $.cookie("word");
         var letters= new Array();
         var userletters = new Array();
+        var userWrongLetters = new Array();
         for(var i=0;i<5;i++){
             if($.inArray(secret_word[i],letters)==-1){
                 letters.push(secret_word[i]);
@@ -57,6 +58,12 @@ function validate_word_r(word){
         for(var i=0;i<26;i++){
             if($.cookie(alpaHelper[i])%3==1){
                 userletters.push(alpaHelper[i]);
+            }
+        }
+
+        for(var i=0;i<26;i++){
+            if($.cookie(alpaHelper[i])%3==2){
+                userWrongLetters.push(alpaHelper[i]);
             }
         }
 
@@ -76,7 +83,10 @@ function validate_word_r(word){
             lett.appendChild(document.createTextNode(wordToRender[i]));
             if($.inArray(wordToRender[i].toLowerCase(),userletters)!=-1 || $.inArray(wordToRender[i].toUpperCase(),userletters)!=-1){
                 lett.setAttribute("style","color:#00FF00;");
-            }else{
+            }else if($.inArray(wordToRender[i].toLowerCase(),userWrongLetters)!=-1 || $.inArray(wordToRender[i].toUpperCase(),userWrongLetters)!=-1){
+                lett.setAttribute("style","color:#FF0000;");
+            }
+            else{
                 lett.setAttribute("style","color:#FFFFFF;");
             }
 
